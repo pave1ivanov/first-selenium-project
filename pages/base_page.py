@@ -1,4 +1,3 @@
-from socket import timeout
 from selenium.common.exceptions import NoSuchElementException
 
 
