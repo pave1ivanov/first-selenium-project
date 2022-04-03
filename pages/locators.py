@@ -2,10 +2,12 @@ from selenium.webdriver.common.by import By
 
 class BasePageLocators():
     LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
-    LOGIN_LINK_INVALID = (By.CSS_SELECTOR, "#login_link_invalid")
+    BASKET_LNIK = (By.CSS_SELECTOR, ".basket-mini a")
 
-class MainPageLocators():
-    LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
+class BasketPageLocators():
+    URL = "/basket/"
+    BASKET_ITEMS_CONTAINER = (By.CSS_SELECTOR, ".basket-items")
+    BASKET_EMPTY_MESSAGE = (By.CSS_SELECTOR, "#content_inner > p")
 
 class LoginPageLocators():
     URL = "/accounts/login/"
