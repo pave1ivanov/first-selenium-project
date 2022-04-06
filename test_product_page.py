@@ -12,7 +12,7 @@ class TestUserAddToBasketFromProductPage:
         login_page = LoginPage(browser, link)
         login_page.open()
         login_page.should_be_login_page()
-        login_page.regester_new_user(str(time.time()) + "@fakemail.com", "KsnfAslkfhas123")
+        login_page.register_new_user(str(time.time()) + "@fakemail.com", "KsnfAslkfhas123")
         login_page.should_be_authorized_user()
         
     def test_user_cant_see_success_message(self, browser):
